@@ -1,0 +1,69 @@
+// main scss start
+
+.author {
+    background: $lightblue;
+    padding: 20px 37px;
+
+    .author_img img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 110px;
+    }
+
+    .content_part {
+        h3 {
+            color: $black4;
+            font-family: $primary-font1;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 20px 0px;
+        }
+
+        p {
+            font-size: 14px;
+            color: $gray2;
+            font-family: $primary-font2;
+        }
+
+        @include social_link;
+    }
+}
+
+.left_part {
+    margin: 45px 0px 0px;
+}
+
+.next_page {
+    margin-top: 30px;
+
+    a {
+        position: relative;
+        display: block;
+        color: #8f9bad;
+        border-radius: 50%;
+        font-size: 14px;
+        text-decoration: none;
+        border: solid 1px #ebebeb;
+        height: 45px;
+        padding: 0;
+        width: 45px;
+        margin: 0px 10px;
+        transition: 0.15s linear;
+        
+        line-height: 45px;
+        text-align: center;
+
+        &:hover,
+        &.page_active {
+            background: $common-gradiant2;
+            color: $white1;
+        }
+
+        &:nth-child(3) {
+            font-size: 10px;
+        }
+
+    }
+}
+
+// main scss end

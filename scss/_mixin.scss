@@ -1,0 +1,492 @@
+// navbar mixin
+@mixin nested_navbar {
+    position: absolute;
+    width: 180px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(0);
+    transition: 0.2s linear;
+    background: $white1;
+
+    li {
+        border-bottom: 1px solid $gray5 ;
+        padding: 8px;
+
+        a {
+            color: $gray1;
+            font-size: 13px;
+            transition: 0.2s linear;
+
+            &:hover {
+                margin-left: 5px;
+                color: $red;
+            }
+        }
+    }
+}
+
+@mixin header_part {
+    .header_part h3 {
+        font-family: $primary-font1;
+        font-weight: 700;
+        line-height: 1.4;
+        color: $black4;
+        font-size: 24px;
+        position: relative;
+        padding: 20px 0px;
+        margin: 30px 0px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../img/header_line.svg");
+            bottom: 6px;
+            left: 1px;
+            width: 33px;
+            height: 6px;
+        }
+
+    }
+}
+@mixin header_part2 {
+    .header_part h3 {
+        font-family: $primary-font1;
+        font-weight: 700;
+        line-height: 1.4;
+        color: $black4;
+        font-size: 24px;
+        position: relative;
+        padding: 0px 0px 20px;
+        text-align: center;
+        margin: 0px 0px 30px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../img/header_line.svg");
+            bottom: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 33px;
+            height: 6px;
+        }
+
+    }
+}
+
+@mixin wrappingBox {
+    border: solid 1px $gray6;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+@mixin cardpart1 {
+    .card_part {
+        margin: 27px 0px;
+
+        .img_part {
+            overflow: hidden;
+            border-radius: 50%;
+            width: 68px;
+
+            a img {
+                width: 60px;
+                border-radius: 50%;
+                transform: scale(1);
+                transition: 0.2s linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .content_part {
+            margin-left: 24px;
+
+            a {
+                color: $black4;
+                font-family: $primary-font1;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 1.4;
+                transition: 0.1s linear;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: $gray2;
+                margin-top: 2px;
+                word-spacing: 3px;
+            }
+
+        }
+    }
+}
+
+@mixin btn {
+    a {
+        padding: 7px 20px;
+        display: inline-block;
+        color: $gray1;
+        transition: 0.1s linear;
+        position: relative;
+
+        color: $white1;
+        background: linear-gradient(90deg, rgba(254, 79, 112, 1) 0%, rgba(255, 163, 135, 1) 72%);
+        border-radius: 25px;
+
+        &:hover {
+            color: $white1;
+        }
+
+        &:hover {
+            color: $black4;
+        }
+
+    }
+}
+
+@mixin btn2 {
+    border-radius: 25px;
+    padding: 6px 11px;
+    color: $white1;
+    font-size: 13px;
+    background: $common-gradiant;
+    display: inline-block;
+    font-family: $primary-font1;
+    transition: all .2s linear;
+    border: none;
+    &:hover {
+        background: linear-gradient(to right, #ffa387 0%, #fe4f70 51%, #fe4f70 100%);
+    }
+
+}
+@mixin btn3{
+    button{
+        font-family: $primary-font2;
+        color: $gray2;
+        padding: 9.5px 36px;
+        background: none;
+        border: 1px solid $gray6;
+        font-size: 12px;
+        font-weight: 400;
+        border-radius: 25px;
+        transition: 0.2s linear;
+        &:hover{
+            color: $red;
+            border: 1px solid $red;
+        }
+    }
+}
+
+@mixin author_part1 {
+    color: $gray7;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: $primary-font1;
+
+    &:nth-child(2) {
+        list-style: disc;
+        margin-left: 14px;
+    }
+
+    a {
+        color: $gray7;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: $primary-font1;
+        margin-right: 10px;
+        transition: 0.2s linear;
+        display: inline-block;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+@mixin author_part2 {
+    margin-top: 20px;
+
+    .author_img {
+        overflow: hidden;
+        margin-right: 12px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    ul li {
+        @include author_part1;
+    }
+}
+
+@mixin samecss2 {
+    .img_part {
+        position: relative;
+
+        .img {
+            overflow: hidden;
+            width: 96%;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: 0.2s linear;
+
+            @include img_hover_effect;
+        }
+
+        .overlay_part {
+            position: absolute;            
+
+            a {
+                @include btn2;
+                position: absolute;
+                left: 24px;
+                top: -201px;
+            }
+            
+            .icon_part {
+                display: inline;
+                position: absolute;
+                bottom: 0px;
+                transform: translateY(50%);
+                right: -290px;
+                background: $common-gradiant2;
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 50px;
+                text-align: center;
+                font-size: 21px;
+            }
+
+        }
+    }
+}
+@mixin samecss4 {
+    a {
+        color: $black4;
+        font-family: $primary-font1;
+        font-weight: 700;
+        margin: 20px 0px;
+        display: inline-block;
+        line-height: 1.4;
+        font-size: 1.25rem;
+        text-transform: capitalize;
+        transition: 0.2s linear;
+        &:hover{
+            color: $red;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: $gray2;
+        line-height: 1.7;
+        font-weight: 400;
+        font-family: $primary-font2;
+        width: 88%;
+    }
+}
+
+@mixin img_hover_effect {
+    img {
+        transform: scale(1);
+        transition: 0.2s linear;
+        border-radius: 10px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@mixin listitem1 {
+    .list_item {
+        .img_part {
+            border-radius: 10px;
+            overflow: hidden;
+            width: 140px;
+            @include img_hover_effect;
+
+        }
+
+        .list_content {
+            margin-left: 17px;
+
+            a {
+                color: $black4;
+                font-family: $primary-font1;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 1.4;
+                transition: 0.2s linear;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                color: $gray2;
+                margin: 2px 0px;
+            }
+        }
+    }
+
+}
+@mixin insper{
+    .banner {
+        position: relative;
+        transform: scale(1);
+        overflow: hidden;
+        border-radius: 10px !important;
+        width: 358px;
+        height: 300px;
+
+        .banner_img img {
+            transition: all .3s ease-in-out;
+            border-radius: 10px !important;
+        }
+
+        &:hover .banner_img img {
+            transform: scale(1.1);
+        }
+
+        .banner_overlay {
+            border-radius: 10px !important;
+            position: absolute;
+            inset: 0;
+            left: 0;
+            right: 0;
+            background: rgba($color: $black4, $alpha: 0.6);
+
+            .banner_content {
+                margin: 130px 27px 0px;
+
+                >a {
+                    @include btn2;
+                }
+
+                h2 a {
+                    font-size: 22px;
+                    font-family: $primary-font1;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    margin: 20px 0px;
+                    color: $white1;
+                    display: inline-block;
+                }
+
+                ul li {
+                    @include author_part1;
+                }
+            }
+        }
+    }
+}
+
+@mixin post_item
+{
+    .post_item {
+        margin: 70px 0px;
+        &:nth-child(1)
+        {
+            margin: 0px 0px 70px;
+        }
+        &:nth-child(4)
+        {
+            margin: 70px 0px 0px;
+        }
+        .img_part {
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 30px;
+            @include img_hover_effect;
+        }
+
+        .content_part {
+            padding-right: 10px;
+
+            .author_info {
+                .author_img {
+                    margin-right: 12px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                ul li,
+                a {
+                    color: $gray2;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-right: 25px;
+                    list-style: disc
+                    
+                }
+                ul li:nth-child(1)
+                {
+                    margin-right: 12px;
+                    list-style-type: none;
+                }
+
+            }
+
+            .content {
+                @include samecss4;
+                p{
+                    width: 100%;
+                }
+            }
+
+            .share_link {
+                margin-top: 10px;
+                width: 97%;
+                i,
+                a {
+                    font-size: 16px;
+                    color: $gray2;
+                    transition: 0.2s linear;
+                }
+
+                a:hover i{
+                    color: $red;
+                }
+            }
+        }
+
+    }
+}
+@mixin social_link{
+    .social_link ul li a i {
+        color: $black4;
+        margin-right: 15px;
+        transition: 0.1s linear;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+@mixin input{
+    input{
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 14px;
+        border-radius: 25px;
+        border: solid 1px $gray6;
+        color: $gray2;
+        margin-bottom: 10px;
+    }
+}

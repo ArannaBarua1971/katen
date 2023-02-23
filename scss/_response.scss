@@ -1,0 +1,392 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width:998px) and (max-width:1199.98px) {
+    #main .banner_part .popular_recent_part .popular_recent_part_selector .selected_part {
+        padding: 10px 30px;
+    }
+    #header .container .social_link {
+        display: none;
+    }
+    #main .banner_part .popular_recent_part .popular_recent_part_selector button {
+        padding: 10px 30px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .img_part .overlay_part .icon_part,
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part .icon_part {
+        right: -253px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .img_part .overlay_part a,
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part a {
+        top: -167px;
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner .banner_overlay .banner_content {
+        margin: 110px 27px 0px;
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner {
+        width: 311px;
+        height: 262px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part,
+    #main .page_content .left_part .trending .content_part {
+        padding: 21px 18px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .content p,
+    #main .page_content .left_part .trending .content_part .content p {
+
+        width: 100%;
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner .banner_overlay .banner_content h2 a {
+        font-size: 18px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .img_part {
+        margin-right: 24px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info ul li,
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info a {
+
+        font-size: 12px;
+        margin-right: 13px;
+    }
+
+    #main .footer .footer_img_part .footer_img img {
+        width: 153.5px;
+        border-radius: 10px;
+    }
+
+    #header .handbar {
+        width: 29%;
+        right: -400px;
+    }
+
+    #main .page_content .right_part .celebration .cel_item .img_part .overlay_part a {
+        top: -141px;
+    }
+
+    #header .row .social_link {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:997.98px) {
+    .contact_info .phone .icon {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact_info .phone {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    #header .container .social_link,
+    .navbar {
+        display: none;
+    }
+
+    #header .handbar {
+        width: 38%;
+    }
+
+    #main .banner_part .popular_recent_part .popular_recent_part_selector .selected_part,
+    #main .banner_part .popular_recent_part .popular_recent_part_selector button {
+        width: 48%;
+    }
+
+    #main .banner_part .popular_recent_part .popular_part ul li .card_part .content_part a,
+    #main .banner_part .popular_recent_part .recent_part ul li .card_part .content_part a {
+        font-size: 17px;
+    }
+
+    #main .page_content .right_part .popular_items .popular_part ul li .card_part .content_part a {
+        font-size: 17px;
+    }
+
+    #main .footer .footer_img_part .footer_img img {
+        width: 227.5px;
+        margin: 3px 0px;
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner {
+        width: 338px;
+        height: 283px;
+    }
+
+}
+
+@media (min-width:567px) and (max-width:767.98px) {
+    .contact_info .phone .icon {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact_info .phone {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 31px 0px;
+    }
+    .author {
+        display: block !important;
+
+        .content_part {
+            text-align: center;
+
+            .social_link {
+                position: relative;
+                left: 50%;
+                transform: translateX(-19%);
+                margin: 13px auto;
+            }
+        }
+    }
+
+    #header .container .social_link,
+    .navbar {
+        display: none;
+    }
+
+    #main .banner_part .banner .banner_overlay .banner_content {
+        margin: 165px 49px 0px;
+    }
+
+    #main .banner_part .popular_recent_part .popular_recent_part_selector .selected_part,
+    #main .banner_part .popular_recent_part .popular_recent_part_selector button {
+        width: 48%;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .img_part .overlay_part a,
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part a {
+        font-size: 12px;
+        top: -148px;
+    }
+
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part a {
+        right: -209px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .img_part .overlay_part .icon_part {
+        right: -203px;
+        transform: translateY(42%);
+    }
+
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part .icon_part {
+        right: -415px;
+
+    }
+
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part a {
+        font-size: 11px;
+        top: -136px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .list_part ul li .list_item .img_part,
+    #main .page_content .left_part .trending .content_part .list_part ul li .list_item .img_part {
+        width: 219px;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part .img_part .img,
+    #main .page_content .left_part .trending .content_part .img_part .img,
+    #main .page_content .left_part .editor_pick .content_part .img_part .img,
+    #main .page_content .left_part .trending .content_part .img_part .img img {
+        width: 100%;
+    }
+
+    #main .page_content .left_part .trending .content_part .img_part .overlay_part a {
+        top: -287px;
+    }
+
+    #main .page_content .left_part .trending .content_part .list_part ul li .list_item .img_part {
+        width: 115px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part {
+        padding: 18px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item {
+        margin: 0px 0px;
+        width: 48%;
+        flex-wrap: wrap;
+    }
+
+    #main .page_content .left_part .latest_post .post_part {
+        justify-content: space-between;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .author_info {
+        margin: 10px 0px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item:nth-child(4),
+    #main .page_content .left_part .latest_post .post_part .post_item:nth-child(1) {
+        margin: 0px 0px 0px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info .author_img img {
+        width: 53px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .load_for_more_post {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #main .page_content .right_part .celebration .cel_item .img_part .overlay_part a {
+        top: -279px;
+    }
+
+    #main .page_content .right_part .celebration .cel_item .img_part .overlay_part a {
+        top: -140px;
+        font-size: 11px;
+    }
+
+    #main .footer .footer_img_part .footer_img img {
+        width: 167.5px;
+        margin: 3px 0px;
+    }
+
+    #main .footer .footer_end_part {
+        div {
+
+            display: flex;
+            justify-content: center;
+
+            &:nth-child(2) {
+                margin: 10px 0px;
+            }
+        }
+
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner {
+        width: 254px;
+        height: 300px;
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner .banner_overlay .banner_content h2 a {
+        font-size: 17px;
+        margin: 10px 0px;
+    }
+
+    #main .page_content .left_part .insperation .slider_item .banner .banner_img,
+    #main .page_content .left_part .insperation .slider_item .banner .banner_img img {
+        height: 100%;
+    }
+
+    #header .handbar {
+        width: 54%;
+    }
+}
+
+@media (max-width:566.98px) {
+    .contact_info .phone {
+        width: 100%;
+    }
+    .author {
+        display: block !important;
+
+        .content_part {
+            text-align: center;
+
+            .social_link {
+                position: relative;
+                left: 50%;
+                transform: translateX(-19%);
+                margin: 13px auto;
+            }
+        }
+    }
+
+    #header .container .social_link,
+    .navbar {
+        display: none;
+    }
+
+    #main .banner_part .banner .banner_overlay .banner_content {
+        margin: 78px 31px 62px;
+    }
+
+    #main .banner_part .banner .banner_overlay .banner_content h2 a {
+        font-size: 23px;
+    }
+
+    #main .footer .footer_img_part .footer_img img {
+        width: 190.5px;
+        margin: 3px 0px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item {
+        display: block !important;
+    }
+
+
+    #main .footer .footer_end_part {
+        div {
+
+            display: flex;
+            justify-content: center;
+
+            &:nth-child(2) {
+                margin: 10px 0px;
+            }
+        }
+
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .img_part {
+        margin-right: -6px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info {
+        margin: 5px 0px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info .author_img {
+        display: inline-block;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info ul li,
+    #main .page_content .left_part .latest_post .post_part .post_item .content_part .author_info a {
+        margin-right: 20px;
+        list-style: disc;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item:nth-child(4),
+    #main .page_content .left_part .latest_post .post_part .post_item:nth-child(1) {
+        margin: 0px 0px 0px;
+    }
+
+    #main .page_content .left_part .latest_post .post_part .post_item {
+        margin: 20px 0px;
+    }
+
+    #header .handbar {
+        width: 80%;
+    }
+    #header .handbar_navbar {
+        width: 82%;
+    }
+
+    #main .page_content .left_part .editor_pick .content_part,
+    #main .page_content .left_part .trending .content_part {
+        display: block !important;
+    }
+    #header .handbar .close_handbar {
+        right: 82px;
+    }
+    #header .handbar {
+        right: -453px;
+    }
+}

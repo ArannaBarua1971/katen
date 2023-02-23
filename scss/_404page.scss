@@ -1,0 +1,28 @@
+// main section scss start
+.page{
+    .content{
+        text-align: center;
+        padding: 30px;
+        margin: 65px 0px;
+        h3{
+            font-family: $primary-font1;
+            color: $black4;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 20px 0px;
+            font-size: 2.5rem;
+        }
+        p{
+            color: $gray1;
+            font-size: 15px;
+            line-height: 1.7;
+            font-family: $primary-font2;
+            margin-bottom: 1.5rem;
+        }
+        a{
+            @include btn2;
+            padding: 9.5px 36px;
+        }
+    }
+}
+// main section scss end
